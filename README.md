@@ -1,4 +1,5 @@
-# 🤖💡 Projeto Detecção Inteligente de Obstáculos: ML e IA (Gemini) em Ação com Dados de Sensores Simulados
+# 🤖 Desvendando obstáculos com IA e ML: 
+Explorando a simulação de Dados de Sensores IoT
 
 Sabe aquele projetinho que voce começa fazer e que acaba virando UM MOSTRO (no bom sentido)???
 
@@ -21,8 +22,8 @@ Mesmo sem a necessidade de hardware físico imediato (Arduino), este projeto per
 
 * **Abordagem Multidisciplinar:** Conecta os mundos de Sensores (simulados), Processamento de Dados, Machine Learning e Inteligência Artificial Avançada.
 * **Uso Inovador do Google Gemini:**
-    * **Coleta de Requisitos Conversacional (Etapa 1):** Utilize o Gemini em um chat interativo no notebook Colab para guiar a definição das características do sensor, tipos de obstáculos e parâmetros de simulação. A IA atua como uma persona "desenvolvedor entrevistador", e o resultado da conversa é a configuração estruturada do projeto (JSON)!
-    * **Análise Textual Aprofundada (Etapa 4):** Alimente o Gemini com as métricas de avaliação e exemplos de erros do modelo de ML para obter insights em linguagem natural sobre o desempenho, pontos fortes, fracos e possíveis causas de erros, elevando a análise além dos números.
+    * **Coleta de Requisitos atravé de um chat (Etapa 1):** Utilize o Gemini em um chat interativo no notebook Colab para guiar a definição das características do sensor, tipos de obstáculos e parâmetros de simulação. A IA atua como uma persona "desenvolvedor entrevistador", e o resultado da conversa é a configuração estruturada do projeto (JSON)!
+    * **Análise Textual Aprofundada (Etapa 4):** o Gemini e alimentado com as métricas de avaliação e exemplos de erros do modelo de ML para obter insights em linguagem natural sobre o desempenho, pontos fortes, fracos e possíveis causas de erros, elevando a análise além dos números.
 * **Pipeline Completo em Google Colab:** Todo o desenvolvimento, treinamento e análise são realizados em notebooks Colab, facilitando a execução e o compartilhamento.
 * **Flexibilidade de Dados:** A estrutura do projeto é construída para lidar com dados de séries temporais com *múltiplas características* (features), tornando-o adaptável conceitualmente a diversos tipos de sensores (distância, acelerômetro, giroscópio, etc.) apenas respondendo as perguntas da Gemini-IA e toda a mágica acontece.
 * **Reprodutibilidade e Compartilhamento:** Projetado para ser facilmente replicável por outros usuários utilizando Google Drive para persistência de arquivos e Secreate API do Colab para manuseio seguro da chave API.
@@ -37,6 +38,22 @@ Mesmo sem a necessidade de hardware físico imediato (Arduino), este projeto per
 * Utilização de Segredos do Google Colab para gerenciar chaves de API de forma segura.
 * Orquestração de um pipeline de Data Science em múltiplos notebooks.
 * Gerenciamento de configuração e persistência de dados/modelos via Google Drive.
+
+* EXEMPLO DE USO
+  ## Não se esqueça de utilizar as stop words "xpto" para sair do chat 
+
+Responda quando pergunatado pela IA que:
+ trata-se de um sensor modelo SR-HC04 que acoplado a uma bengala guia para deficientes visuais. Desejo criar um modelo de maquina para detecção de OBJETOS, AEREOS, FIXOS, ACIMA DA LINHA DA CINTURA para informar ao usuário se existe algum obstáculo a frente.
+ - para uso em ambiente urbano;  a bengala estará em movimento constante
+ - a taxa de amostragem a cada 500 milisegundos;
+ - o sensor ficar em angulo que ajude a detectar objetos acima da linha da cintura
+ - Detectar:
+     - a presença de pessoas à frente
+     - Obstáculos Fixos: placas, marquises
+     - obstáculos Suspensos: galhos de árvores, toldos, etc.
+     -
+ - apos estas respostas a aplicação vai gerar todas as informações para se construir um modelo de ML para a detecção de objetos
+   - gerar dados (mock)
 
 ## 🏗️ Estrutura do Projeto
 
